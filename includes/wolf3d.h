@@ -6,7 +6,7 @@
 /*   By: awoimbee <awoimbee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/14 09:48:50 by wta               #+#    #+#             */
-/*   Updated: 2019/01/15 16:46:00 by awoimbee         ###   ########.fr       */
+/*   Updated: 2019/01/15 18:15:45 by awoimbee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ typedef struct	s_player
 {
 	t_vec2	pos;
 	t_vec2	dir;
-	int		fov;
+	double	fov;
 }				t_player;
 
 typedef struct	s_info
@@ -60,6 +60,7 @@ typedef struct	s_info
 	t_player	player;
 	t_map		m_info;
 	t_mlx		mlx;
+	int			res[2];
 }				t_info;
 
 /*
