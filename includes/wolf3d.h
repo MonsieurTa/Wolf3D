@@ -6,7 +6,7 @@
 /*   By: awoimbee <awoimbee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/14 09:48:50 by wta               #+#    #+#             */
-/*   Updated: 2019/01/15 16:46:00 by awoimbee         ###   ########.fr       */
+/*   Updated: 2019/01/15 18:44:07 by wta              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@
 # define WALL_S		1
 # define TEX_WIDTH	640
 # define TEX_HEIGHT	640
+# define SCREEN_W	1024
+# define SCREEN_H	720
 
 typedef struct	s_mlx
 {
@@ -50,10 +52,15 @@ typedef struct	s_map
 
 typedef struct	s_player
 {
-	t_vec2	pos;
-	t_vec2	dir;
-	int		fov;
+	t_vec2	p_pos;
+	t_vec2	p_dir;
+	double	dist;
+	double	fov;
+	t_vec2	c_pos;
+	t_vec2	c_dir;
 }				t_player;
+
+
 
 typedef struct	s_info
 {
